@@ -12,8 +12,8 @@ export class HardwareType{
     name: string;
 
     @ManyToMany(() => Category)
-    categories: Category[];
+    categories: Promise<Category[]>;
 
     @OneToMany(() => Product, product => product.hardwareType)
-    products: Product[];
+    products: Promise<Product[]>;
 }

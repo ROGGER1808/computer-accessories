@@ -12,8 +12,8 @@ export class Category {
 
     @ManyToMany(() => HardwareType)
     @JoinTable()
-    hardwareTypes: HardwareType[];
+    hardwareTypes: Promise<HardwareType[]>;
 
     @OneToMany(() => Product, product => product.category)
-    products: Product[];
+    products: Promise<Product[]>;
 }
