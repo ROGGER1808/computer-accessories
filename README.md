@@ -1,4 +1,4 @@
-# Awesome Project Build with TypeORM
+# Computer Accessories
 
 Steps to run this project:
 

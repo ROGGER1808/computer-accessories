@@ -26,6 +26,11 @@ export const Routes = [{
     route: "/home",
     controller: HomeController,
     action: "home"
+}, {
+    method: "get",
+    route: "/foo",
+    controller: HomeController,
+    action: "foo"
 },
 
 ];

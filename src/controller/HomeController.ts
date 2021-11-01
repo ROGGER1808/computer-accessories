@@ -6,7 +6,13 @@ export class HomeController {
 
 
     async home(request: Request, response: Response, next: NextFunction) {
+        
         response.render("home");
+    }
+
+    async foo(request: Request, response: Response, next: NextFunction) {
+        
+        response.render("foo");
     }
 
 }
